@@ -4,7 +4,10 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import org.springframework.stereotype.Service;
+
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Service
 public class News implements NewsManager {
 
     private String status;
