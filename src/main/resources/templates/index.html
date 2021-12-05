@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <title>Global News</title>
+
+    <style>
+        .card {
+
+            font-weight: bold;
+            font-size: 0.9rem;
+            height: 25%;
+            margin: 2rem;
+            border: none;
+            outline: none;
+            border-radius: 22px;
+            background-color: #e0e5ec;
+            box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+                -9px -9px 16px rgba(255, 255, 255, 0.5);
+        }
+
+        .card:hover {
+
+
+            box-shadow: inset 9px 9px 16px rgb(163, 177, 198, 0.6),
+                inset -9px -9px 16px rgba(255, 255, 255, 0.5);
+        }
+
+        .detail {
+            margin: 0.5rem 0rem;
+        }
+
+        .btn {
+            height: 4.2rem;
+            width: 4.2rem;
+            font-weight: bold;
+            font-size: 0.9rem;
+            border: none;
+            outline: none;
+            margin-right: 1rem;
+            border-radius: 2rem;
+            background-color: #e0e5ec;
+            box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+                -9px -9px 16px rgba(255, 255, 255, 0.5);
+        }
+
+        .btn:hover {
+            box-shadow: inset 9px 9px 16px rgb(163, 177, 198, 0.6),
+                inset -9px -9px 16px rgba(255, 255, 255, 0.5);
+        }
+
+        span {
+            color: #363233;
+            font-family: Luminari, fantasy;
+            font-weight: 100;
+            text-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+                -9px -9px 16px rgba(255, 255, 255, 0.5);
+            outline: none;
+            border: none;
+        }
+
+        .navbar-toggler:focus,
+        .navbar-toggler:active {
+            outline: none;
+            border: none;
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(1,1,1, 2)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+
+
+        .btn {
+            font-weight: bold;
+            width: fit-content;
+            height: fit-content;
+            margin: 0.5rem;
+            font-size: 1.1rem;
+            padding: 1rem;
+            border: none;
+            outline: none;
+            color: #007bff;
+            border-radius: 22px;
+            background-color: #e0e5ec;
+            box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+                -9px -9px 16px rgba(255, 255, 255, 0.5);
+            transition: box-shadow 500ms;
+        }
+
+        .btn:hover {
+            box-shadow: inset 9px 9px 16px rgb(163, 177, 198, 0.6),
+                inset -9px -9px 16px rgba(255, 255, 255, 0.5);
+        }
+
+
+        .logo {
+            color: #363233;
+            font-size: 1.8rem;
+            font-family: Luminari, fantasy;
+            font-weight: 100;
+            text-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+                -9px -9px 16px rgba(255, 255, 255, 0.5);
+        }
+
+        .form-control {
+
+            font-weight: bold;
+            height: fit-content;
+            margin: 0.5rem;
+            font-size: 1.1rem;
+            padding: 1rem;
+            border: none;
+            outline: none;
+            color: #007bff;
+            border-radius: 22px;
+            background-color: #e0e5ec;
+            box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+                -9px -9px 16px rgba(255, 255, 255, 0.5);
+            transition: box-shadow 500ms;
+        }
+
+        .form-control:hover {
+            box-shadow: inset 9px 9px 16px rgb(163, 177, 198, 0.6),
+                inset -9px -9px 16px rgba(255, 255, 255, 0.5);
+            border-color: #007bff;
+        }
+
+        .header {
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+
+        .col-sm-6 {
+            font-size: 0.9rem;
+            font-family: Luminari, fantasy;
+            text-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+                -9px -9px 16px rgba(255, 255, 255, 0.5);
+            text-align: center;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #363233;
+        }
+
+        .link:hover {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #363233;
+        }
+
+        a:hover {
+            color: #363233;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: #e0e5ec;">
+
+    <!-- Header -->
+    <div class="header">
+
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark container">
+            <span class="logo">GLOBAL NEWS</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <div class="navbar-nav ml-auto">
+                    <form class="form-inline my-2 my-lg-0" method="post" action="search">
+                        <input class="form-control mr-md-2" name="search" id="search" type="search"
+                            placeholder="Search">
+                        <button class="btn" type="submit" value="Submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <!-- Header -->
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col col-md-6 col-lg-4" th:each="n : ${news}">
+                <a th:href="${n.url}" target="_blank">
+                    <div class="card mx-auto">
+                        <span style="padding: 1rem;font-size: 1.3rem;" contenteditable="true"
+                            th:text="${n.title}">BEARCAT
+                            STADIUM</span>
+
+                        <img th:src="${n.urlToImage}" />
+                        <div class="detail" style="margin-top: 1rem" th:text="${n.author}">
+
+                        </div>
+                        <div class="detail" th:text="${n.description}"></div>
+                        <div class="detail" th:text="${n.publishedAt}"></div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="container row text-center" style="padding: 2%;">
+            <div class="col-sm-6 link">
+                <a class="link" href="https://github.com/pramod096/News" target="_blank">Source Repo</a>
+            </div>
+            <div class="col-sm-6 link">Pramod Gonegari</div>
+        </div>
+        <!-- Footer -->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
